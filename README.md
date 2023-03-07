@@ -64,8 +64,8 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
       </a>
     </td>
     <td align="center">
-      <a href="#">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png" width="115px;" alt="Foto da Gabriela no GitHub"/><br>
+      <a href="https://github.com/GabsBecca">
+        <img src="https://avatars.githubusercontent.com/u/126920756?v=4" width="115px;" alt="Foto da Gabriela no GitHub"/><br>
         <sub>
           <b>Gabriela Zanotto Alves Rodrigues</b>
         </sub>
