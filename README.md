@@ -71,11 +71,11 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
         </sub>
       </a>
     </td>
-    <td align="center">
-      <a href="https://github.com/GabsBecca>
-        <img src="https://avatars.githubusercontent.com/u/126920756?v=4" width="115px;" alt="Foto do Ruan no GitHub"/><br>
+     <td align="center">
+      <a href="https://github.com/RuanChiconFiap">
+        <img src="https://avatars.githubusercontent.com/u/126726490?v=4" width="115px;" alt="Foto do Ruan no GitHub"/><br>
         <sub>
-          <b>Ruan Chicon Gubasta</b>
+          <b>Gabriela Zanotto Alves Rodrigues</b>
         </sub>
       </a>
     </td>
