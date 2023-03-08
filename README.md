@@ -75,7 +75,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
       <a href="https://github.com/RuanChiconFiap">
         <img src="https://avatars.githubusercontent.com/u/126726490?v=4" width="115px;" alt="Foto do Ruan no GitHub"/><br>
         <sub>
-          <b>Gabriela Zanotto Alves Rodrigues</b>
+          <b>Ruan Chicon Gubasta</b>
         </sub>
       </a>
     </td>
