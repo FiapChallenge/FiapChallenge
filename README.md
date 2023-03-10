@@ -56,8 +56,8 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
       </a>
     </td>
     <td align="center">
-      <a href="#">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png" width="115px;" alt="Foto do Gabriel Souza no GitHub"/><br>
+      <a href="https://github.com/GabrielSouzaQ">
+        <img src="https://avatars.githubusercontent.com/u/126726456?v=4" width="115px;" alt="Foto do Gabriel Souza no GitHub"/><br>
         <sub>
           <b>Gabriel Souza de Queiroz</b>
         </sub>
