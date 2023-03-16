@@ -81,4 +81,4 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 ---
 
-[⬆ Voltar ao topo](#FiapChallenge)<br>
+[⬆ Voltar ao topo](#FiapChallenge)
