@@ -28,13 +28,10 @@
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-- [ ] Ideia para o desafio
-- [ ] Realização do Projeto
-- [ ] Apresentação Detalhada
-- [ ] Polimentos Finais
-
-
-
+-   [ ] Ideia para o desafio
+-   [ ] Realização do Projeto
+-   [ ] Apresentação Detalhada
+-   [ ] Polimentos Finais
 
 <h2 name="integrantes">✍️ Integrantes</h2>
 <table>
