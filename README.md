@@ -14,7 +14,7 @@
 <img src="challenge.jpg" alt="exemplo imagem" width=500>
 </p>
 
-> Repositório utilizado para o Desafio do Porto Seguro em Parceria com a FIAP
+> Repositório utilizado para o Desafio do Porto Seguro em parceria com a FIAP
 
 <details open>
   <summary><h3><b>Índice</b></h3></summary>
@@ -81,4 +81,4 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 ---
 
-[⬆ Voltar ao topo](#FiapChallenge)<br>
+[⬆ Voltar ao topo](#FiapChallenge)
