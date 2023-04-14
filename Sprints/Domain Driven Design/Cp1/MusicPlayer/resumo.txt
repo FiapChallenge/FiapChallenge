@@ -1,0 +1,10 @@
+👤| Integrantes - RM :
+- Augusto Barcelos Barros - 98078
+- Gabriel Gribl de Carvalho - 96270
+- Gabriel Souza de Queiroz -98570
+- Gabriela Zanotto Alves Rodrigues-551629
+
+Resumo do Sistema:
+
+Sistema de player de música que pode adicionar autores e músicas (com link do youtube), e depois toca-las 
+no browser padrão (Pelo nome ou de forma aleatória)
