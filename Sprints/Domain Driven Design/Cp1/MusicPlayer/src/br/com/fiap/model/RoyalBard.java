@@ -10,10 +10,6 @@ public class RoyalBard {
     List<Author> authors = new ArrayList<>();
     List<Song> songs = new ArrayList<>();
 
-    public void addAuthor(String name) {
-        this.authors.add(new Author(name));
-    }
-
     public void addAuthor(Author author) {
         this.authors.add(author);
     }
@@ -41,19 +37,19 @@ public class RoyalBard {
         }
     }
 
-    public void addSong(String authorName, String title, String youtubePath) {
-        Author author = getAuthor(authorName);
-        Song song = new Song(author, title, youtubePath);
-        author.addSong(song);
-        this.songs.add(song);
-    }
+    // public void addSong(String authorName, String title, String youtubePath) {
+    //     Author author = getAuthor(authorName);
+    //     Song song = new Song(author, title, youtubePath);
+    //     author.addSong(song);
+    //     this.songs.add(song);
+    // }
 
-    public void addSong(String authorName, String title, String genre, int year, int duration, String youtubePath) {
-        Author author = getAuthor(authorName);
-        Song song = new Song(author, title, genre, year, duration, youtubePath);
-        author.addSong(song);
-        this.songs.add(song);
-    }
+    // public void addSong(String authorName, String title, String genre, int year, int duration, String youtubePath) {
+    //     Author author = getAuthor(authorName);
+    //     Song song = new Song(author, title, genre, year, duration, youtubePath);
+    //     author.addSong(song);
+    //     this.songs.add(song);
+    // }
 
     public void addSong(Song song) {
         this.songs.add(song);
@@ -81,6 +77,7 @@ public class RoyalBard {
             author.showSongs();
         }
     }
+
 
     public void play(String title) {
         for (Author author : this.authors) {

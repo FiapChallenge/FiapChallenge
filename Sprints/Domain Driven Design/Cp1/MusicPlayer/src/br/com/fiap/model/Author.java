@@ -7,6 +7,7 @@ import java.util.List;
 public class Author {
     private List<Song> songs = new ArrayList<>();
     private String name;
+    private List<Album> albums = new ArrayList<>();
 
     public Author(String name) {
         this.name = name;
@@ -46,9 +47,36 @@ public class Author {
         System.out.print("Sons de " + this.songs.get(0).getAuthor().getName() + ": ");
         for (Iterator<Song> it = this.songs.iterator(); it.hasNext();) {
             Song song = it.next();
-            System.out.print(song.getTitle() + " - ");
             if (!it.hasNext()) {
                 System.out.println(song.getTitle());
+            } else {
+                System.out.print(song.getTitle());
+                System.out.print(", ");
+            }
+        }
+    }
+
+    public List<Album> getAlbums() {
+        return albums;
+    }
+
+    public void addAlbum(Album album) {
+        this.albums.add(album);
+    }
+
+    public void removeAlbum(Album album) {
+        this.albums.remove(album);
+    }
+
+    public void showAlbuns() {
+        System.out.print("Álbuns de " + this.name + ": ");
+        for (Iterator<Album> it = this.albums.iterator(); it.hasNext();) {
+            Album album = it.next();
+            if (!it.hasNext()) {
+                System.out.println(album.getName() + " (" + album.getYear() + ")");
+            } else {
+                System.out.print(album.getName() + " (" + album.getYear() + ")");
+                System.out.print(", ");
             }
         }
     }
