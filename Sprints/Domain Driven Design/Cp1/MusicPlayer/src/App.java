@@ -61,8 +61,8 @@ public class App {
         // rb.getAuthor("Enygma").showSongs();
         rb.showSongs();
         // rb.showAuthors();
-        // rb.play("Lua de Neon");
+        rb.play("Lua de Neon");
         // rb.play("Alma", "Enygma");
-        rb.playRandom();
+        // rb.playRandom();
     }
 }

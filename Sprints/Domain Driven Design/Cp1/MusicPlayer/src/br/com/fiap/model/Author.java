@@ -7,11 +7,10 @@ import java.util.List;
 public class Author {
     private List<Song> songs = new ArrayList<>();
     private String name;
-    private List<Album> albums = new ArrayList<>();
+    private List<Album> albuns = new ArrayList<>();
 
     public Author(String name) {
         this.name = name;
-
     }
 
     public Author(String name, List<Song> songs) {
@@ -56,21 +55,21 @@ public class Author {
         }
     }
 
-    public List<Album> getAlbums() {
-        return albums;
+    public List<Album> getAlbuns() {
+        return albuns;
     }
 
     public void addAlbum(Album album) {
-        this.albums.add(album);
+        this.albuns.add(album);
     }
 
     public void removeAlbum(Album album) {
-        this.albums.remove(album);
+        this.albuns.remove(album);
     }
 
     public void showAlbuns() {
         System.out.print("Álbuns de " + this.name + ": ");
-        for (Iterator<Album> it = this.albums.iterator(); it.hasNext();) {
+        for (Iterator<Album> it = this.albuns.iterator(); it.hasNext();) {
             Album album = it.next();
             if (!it.hasNext()) {
                 System.out.println(album.getName() + " (" + album.getYear() + ")");
