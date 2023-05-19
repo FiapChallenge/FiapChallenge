@@ -1,5 +1,11 @@
 import json
-from lib.var_texts import categoria_tarifaria, categoria_tarifaria_importado, categoria_tarifaria_especial, guinchos, text_categoria_tarifaria
+from lib.var_texts import (
+    categoria_tarifaria,
+    categoria_tarifaria_importado,
+    categoria_tarifaria_especial,
+    guinchos,
+    text_categoria_tarifaria,
+)
 
 
 try:
@@ -8,9 +14,6 @@ try:
 except FileNotFoundError:
     config = {"clear_output": False}
 
-
-# with open("./lib/categoria.txt", "r", encoding="UTF-8") as f:
-#     text_categoria_tarifaria = f.read()
 
 def solicitar_guinho(resumo_operacoes):
     print("Opção escolhida: Solicitar Guincho")
@@ -51,7 +54,6 @@ def solicitar_guinho(resumo_operacoes):
                     categoria_tarifaria_especial[cod_tarifa],
                 )
             endereco = input("Digite o endereço atual: ")
-            # TODO - Implementar a busca de guinchos disponíveis e melhorar a busca, adicionar sistema de localização real e tempo de espera
             if cod_tarifa >= 93:
                 print("Guincho escolhido:", guinchos[0])
             elif cod_tarifa > 80:
@@ -136,4 +138,3 @@ def settings(resumo_operacoes):
                 print("Configuração inexistente")
         else:
             print("Opção inválida")
-
