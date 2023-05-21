@@ -1,5 +1,5 @@
 import json
-from lib.var_texts import (
+from utils.var_texts import (
     categoria_tarifaria,
     categoria_tarifaria_importado,
     categoria_tarifaria_especial,

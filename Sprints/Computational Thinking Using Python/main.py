@@ -1,5 +1,5 @@
 import json
-from lib.commands import solicitar_guinho, listar_guinchos, contato, settings, config
+from utils.commands import solicitar_guinho, listar_guinchos, contato, settings, config
 import os
 import re
 
