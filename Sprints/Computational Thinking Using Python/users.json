@@ -28,5 +28,10 @@
         "nome": "Teste",
         "email": "teste@gmail.com",
         "senha": "teste"
+    },
+    "incguinchei@gmail.com": {
+        "nome": "Guinchei",
+        "email": "incguinchei@gmail.com",
+        "senha": "fiapchallenge"
     }
 }

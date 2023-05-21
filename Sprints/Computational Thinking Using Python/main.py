@@ -8,7 +8,7 @@ users = json.load(open("users.json", "r"))
 
 
 def cadastro():
-    print("Bem vindo ao sistema de guinchos!")
+    print("Bem vindo(a) ao sistema de guinchos!")
     opcao = input("Você já possui cadastro? (s/n): ")
     if opcao == "s":
         user = login()
@@ -78,7 +78,7 @@ def print_menu():
 if __name__ == "__main__":
     user = cadastro()
     if user is not None:
-        print(f"Bem vindo {user['nome']}")
+        print(f"Bem vindo(a) {user['nome']}")
     while True:
         print_menu()
         opcao = input("Digite a opção desejada: ")
