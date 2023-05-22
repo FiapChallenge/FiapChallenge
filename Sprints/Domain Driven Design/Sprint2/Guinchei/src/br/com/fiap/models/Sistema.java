@@ -11,21 +11,41 @@ import java.util.List;
 
 public class Sistema {
     Categoria categoria;
+    List<Caso> casos = new ArrayList<Caso>();
     private List<Usuario> usuarios = new ArrayList<Usuario>();
 
     public Sistema() {
         this.categoria = new Categoria();
     }
 
+    public List<Caso> getCasos() {
+        return casos;
+    }
+
+    public void addCaso(Caso caso) {
+        casos.add(caso);
+    }
+
     public void saveData() {
         try (BufferedWriter bw = new BufferedWriter(new FileWriter("data.txt"))) {
             for (Usuario usuario : usuarios) {
-                String row = usuario.getNome() + ";" + usuario.getEmail() + ";" + usuario.getSenha();
+                String row = usuario.getNome() + ";" + usuario.getEmail() + ";" + usuario.getSenha() + ";"
+                        + usuario.getFotopath();
                 bw.write(row);
-                bw.newLine(); // write each line on a new line
+                bw.newLine();
             }
         } catch (IOException e) {
-            // System.out.println("Error writing to file: " + e.getMessage());
+            System.out.println("Erro ao salvar arquivo");
+        }
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter("casos.txt"))) {
+            for (Caso caso : casos) {
+                String row = caso.getAcidente() + ";" + caso.getLocal() + ";" + caso.getDataHora() + ";"
+                        + caso.getTipo() + ";" + caso.getStatus() + ";" + caso.getUsuario().getEmail();
+                bw.write(row);
+                bw.newLine();
+            }
+        } catch (IOException e) {
+            System.out.println("Erro ao salvar arquivo");
         }
     }
 
@@ -41,8 +61,23 @@ public class Sistema {
             System.out.println("Erro ao ler arquivo");
         }
         for (List<String> row : data) {
-            Usuario usuario = new Usuario(row.get(0), row.get(1), row.get(2));
+            Usuario usuario = new Usuario(row.get(0), row.get(1), row.get(2), row.get(3));
             usuarios.add(usuario);
+        }
+        List<List<String>> dataCasos = new ArrayList<>();
+        try (BufferedReader br = new BufferedReader(new FileReader("casos.txt"))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                String[] values = line.split(";");
+                dataCasos.add(Arrays.asList(values));
+            }
+        } catch (Exception e) {
+            System.out.println("Erro ao ler arquivo");
+        }
+        for (List<String> row : dataCasos) {
+            Usuario usuario = buscarUsuario(row.get(5));
+            Caso caso = new Caso(row.get(0), row.get(1), row.get(2), row.get(3), row.get(4), usuario);
+            casos.add(caso);
         }
     }
 

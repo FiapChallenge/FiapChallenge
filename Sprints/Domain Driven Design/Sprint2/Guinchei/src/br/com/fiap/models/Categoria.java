@@ -14,7 +14,7 @@ public class Categoria {
         categoriasEspecial = new HashMap<>();
 
         categoriasNormal.put(10, "PASSEIO");
-        categoriasNormal.put(14, "PICK- UP'S LEVES");
+        categoriasNormal.put(14, "PICK-UP'S LEVES");
         categoriasNormal.put(16, "ESPORTIVOS");
         categoriasNormal.put(18, "MODELOS ESPECIAIS (PASSEIO)");
         categoriasNormal.put(20,
@@ -26,7 +26,7 @@ public class Categoria {
         categoriasNormal.put(40, "CAMINHÕES LEVES (PBT até 40 toneladas)");
         categoriasNormal.put(42, "CAMINHÕES PESADOS (PBT* acima de 42 toneladas, inclusive)");
         categoriasNormal.put(50, "REBOCADORES");
-        categoriasNormal.put(52, "REBOQUES E SEMI- REBOQUES");
+        categoriasNormal.put(52, "REBOQUES E SEMI-REBOQUES");
         categoriasNormal.put(58, "ÔNIBUS E MICROÔNIBUS COM COBRANÇA DE FRETE (exceto urbano com linha regular)");
         categoriasNormal.put(60, "ÔNIBUS, MICROÔNIBUS COM COBRANÇA DE FRETE (urbano com linha regular)");
         categoriasNormal.put(62, "ÔNIBUS, MICROÔNIBUS SEM COBRANÇA DE FRETE");
@@ -42,7 +42,7 @@ public class Categoria {
         categoriasNormal.put(92, "VEÍCULOS FUNERÁRIOS");
 
         categoriasImportado.put(11, "PASSEIO");
-        categoriasImportado.put(15, "PICK- UP'S LEVES");
+        categoriasImportado.put(15, "PICK-UP'S LEVES");
         categoriasImportado.put(17, "ESPORTIVOS");
         categoriasImportado.put(19, "MODELOS ESPECIAIS (PASSEIO)");
         categoriasImportado.put(21,
@@ -50,11 +50,11 @@ public class Categoria {
         categoriasImportado.put(23,
                 "PICK- UP'S PESADAS - PESSOAS: FORD: F100, F1000, F250 e RANGER (Cabine Dupla) GM: ACD/10 e 20, S10 e SILVERADO (Cabine Dupla), BONANZA, S10 BLAZER e VERANEIO. TOYOTA JEEP e GURGEL CARAJÁS DODGE DAKOTA CLUB CAB (Cabine Estendida) DERIVADAS DE PICK- UP PESADAS FORD e GM");
         categoriasImportado.put(31,
-                "BICICLETAS MOTORIZADAS, MOTOCICLETAS, MOTONETAS COM REBOQUE OU “SIDE-CAR”, VEÍCULOS “ROMI- ISETTA” e VESPACAR.");
+                "BICICLETAS MOTORIZADAS, MOTOCICLETAS, MOTONETAS COM REBOQUE OU “SIDE-CAR”, VEÍCULOS “ROMI-ISETTA” e VESPACAR.");
         categoriasImportado.put(41, "CAMINHÕES LEVES (PBT até 10 toneladas)");
         categoriasImportado.put(43, "CAMINHÕES PESADOS (PBT* acima de 10 toneladas, inclusive)");
         categoriasImportado.put(51, "REBOCADORES");
-        categoriasImportado.put(53, "REBOQUES E SEMI- REBOQUES");
+        categoriasImportado.put(53, "REBOQUES E SEMI-REBOQUES");
         categoriasImportado.put(59, "ÔNIBUS E MICROÔNIBUS COM COBRANÇA DE FRETE (exceto urbano com linha regular)");
         categoriasImportado.put(61, "ÔNIBUS, MICROÔNIBUS COM COBRANÇA DE FRETE (urbano com linha regular)");
         categoriasImportado.put(63, "ÔNIBUS, MICROÔNIBUS SEM COBRANÇA DE FRETE");
@@ -70,7 +70,7 @@ public class Categoria {
         categoriasImportado.put(93, "VEÍCULOS FUNERÁRIOS");
 
         categoriasEspecial.put(94, "AMBULÂNCIAS");
-        categoriasEspecial.put(95, "AUTO- ESCOLAS");
+        categoriasEspecial.put(95, "AUTO-ESCOLAS");
         categoriasEspecial.put(96, "BOMBEIROS");
         categoriasEspecial.put(97, "POLICIAMENTO");
         categoriasEspecial.put(98,
@@ -129,6 +129,42 @@ public class Categoria {
         }
         return null;
     }
+
+    public HashMap<Integer, String> listarCategorias() {
+        HashMap<Integer, String> categorias = new HashMap<Integer, String>();
+        categorias.putAll(categoriasNormal);
+        categorias.putAll(categoriasImportado);
+        categorias.putAll(categoriasEspecial);
+        return categorias;
+    }
+
+    public String getTipoCodigo(int number) {
+        if (categoriasNormal.containsKey(number)) {
+            return "NACIONAL";
+        } else if (categoriasImportado.containsKey(number)) {
+            return "IMPORTADO";
+        } else if (categoriasEspecial.containsKey(number)) {
+            return "ESPECIAL";
+        } else {
+            return null;
+        }
+    }
+
+    public HashMap<Integer, String> listarCategoriasSemRepeticao() {
+        HashMap<Integer, String> categorias = new HashMap<Integer, String>();
+        categorias.putAll(categoriasNormal);
+        categorias.putAll(categoriasImportado);
+        categorias.putAll(categoriasEspecial);
+        HashMap<Integer, String> categoriasSemRepeticao = new HashMap<Integer, String>();
+        for (Map.Entry<Integer, String> entry : categorias.entrySet()) {
+            if (!categoriasSemRepeticao.containsValue(entry.getValue())) {
+                categoriasSemRepeticao.put(entry.getKey(), entry.getValue());
+            }
+        }
+        return categoriasSemRepeticao;
+    }
+
+
 
     public void removeCategoria(int number) {
         removeCategoriaNormal(number);

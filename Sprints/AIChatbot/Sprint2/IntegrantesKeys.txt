@@ -1,0 +1,15 @@
+👤| Integrantes - RM :
+Augusto Barcelos Barros - 98078
+Gabriel Gribl de Carvalho - 96270
+Gabriel Souza de Queiroz - 98570
+Gabriela Zanotto Alves Rodrigues - 551629
+
+API: IFHAo_IVNaTPyWzlVh6DZ9RmxA-8rOynCzITH6CpZ5Q7
+URL: https://api.au-syd.assistant.watson.cloud.ibm.com/instances/51e8ae74-72da-41d8-860d-ef068ca0e63a
+ID: eb73a040-2a5f-4130-b4c4-7c420508ad28
+
+TTS API: zCJqmqLey9IxeHHveLn5BAiKX92SWTj2ZbtfE7y2Hehv
+URL: https://api.au-syd.text-to-speech.watson.cloud.ibm.com/instances/5940960f-ba6d-4cdf-9102-48f075fccc73
+
+STT API: HBhh4c_xtRtBu1UNF22D44ZJRG0KeExm1fOxtN1HnTwp
+URL: https://api.au-syd.speech-to-text.watson.cloud.ibm.com/instances/cf90849b-085a-4dcb-81e7-37c3840fa70f

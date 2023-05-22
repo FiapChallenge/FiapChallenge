@@ -1,0 +1,924 @@
+{
+  "intents": [
+    {
+      "intent": "contato",
+      "examples": [
+        {
+          "text": "Como faço para entrar em contato com o serviço de guincho?"
+        },
+        {
+          "text": "Preciso chamar um guincho. Onde posso encontrar o telefone para contato?"
+        },
+        {
+          "text": "Preciso de um guincho imediatamente. Quais são os números de telefone para chamadas de emergência?"
+        },
+        {
+          "text": "Preciso do contato para chamar um guincho. Pode me passar?"
+        },
+        {
+          "text": "Quero chamar um guincho para uma emergência. Quais são os contatos disponíveis?"
+        },
+        {
+          "text": "Quero o número de telefone do serviço de guincho, por favor."
+        },
+        {
+          "text": "Quero pedir um guincho. Quais são os números de telefone para contato?"
+        },
+        {
+          "text": "Quero solicitar um guincho. Como posso encontrá-los?"
+        },
+        {
+          "text": "tem algum contato para acidente?"
+        },
+        {
+          "text": "teria algum outro contato?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "despedida",
+      "examples": [
+        {
+          "text": "adeus"
+        },
+        {
+          "text": "Até a próxima vez"
+        },
+        {
+          "text": "Até a próxima vez!"
+        },
+        {
+          "text": "Até logo!"
+        },
+        {
+          "text": "Até mais"
+        },
+        {
+          "text": "Até nossa próxima conversa"
+        },
+        {
+          "text": "Foi um prazer conversar com você. Até breve!"
+        },
+        {
+          "text": "Nos falamos em breve!"
+        },
+        {
+          "text": "Ótimo dia para você bot!"
+        },
+        {
+          "text": "Precisarei conversar novamente com você em breve"
+        },
+        {
+          "text": "Tchau! Volto a qualquer momento se precisar."
+        },
+        {
+          "text": "Tenha um bom dia!"
+        },
+        {
+          "text": "Tenha um excelente dia"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "duvidaCadastro",
+      "examples": [
+        {
+          "text": "Como faço para me cadastrar?"
+        },
+        {
+          "text": "Como posso efetuar meu cadastro"
+        },
+        {
+          "text": "Como posso me cadastrar?"
+        },
+        {
+          "text": "Como posso me registrar?"
+        },
+        {
+          "text": "Como se cadastrar?"
+        },
+        {
+          "text": "O que devo fazer para me cadastrar com sucesso?"
+        },
+        {
+          "text": "O que eu preciso fazer para me inscrever?"
+        },
+        {
+          "text": "Quais são as etapas para me cadastrar?"
+        },
+        {
+          "text": "Qual é o procedimento do cadastro?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "duvidaDemora",
+      "examples": [
+        {
+          "text": "Demora muito para o guincho ser enviado depois que eu fizer a solicitação?"
+        },
+        {
+          "text": "Em média, quanto tempo demora para o guincho estar disponível?"
+        },
+        {
+          "text": "Existe algum tempo de espera padrão para o serviço de guincho?"
+        },
+        {
+          "text": "Gostaria de saber o tempo de espera para o serviço de guincho."
+        },
+        {
+          "text": "Posso ter uma estimativa do tempo que o guincho vai levar para chegar?"
+        },
+        {
+          "text": "Qual é o tempo estimado de espera para o guincho chegar?"
+        },
+        {
+          "text": "Quanto tempo demora para o guincho chegar até mim?"
+        },
+        {
+          "text": "Quanto tempo leva para o guincho chegar ao local do acidente?"
+        },
+        {
+          "text": "Quanto tempo leva para o guincho chegar após eu ligar para o serviço?"
+        },
+        {
+          "text": "Quanto tempo normalmente leva para o guincho estar disponível em situações de acidente?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "inicioCadastro",
+      "examples": [
+        {
+          "text": "cadastro"
+        },
+        {
+          "text": "fazer meu cadastro"
+        },
+        {
+          "text": "gostaria de me cadastrar"
+        },
+        {
+          "text": "me cadastre"
+        },
+        {
+          "text": "podemos começar o cadastro?"
+        },
+        {
+          "text": "quero me cadastrar"
+        },
+        {
+          "text": "vamos fazer meu cadastro?"
+        },
+        {
+          "text": "vamos iniciar o cadastro"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "obrigado",
+      "examples": [
+        {
+          "text": "Agradeço demais!"
+        },
+        {
+          "text": "Muito obrigada!"
+        },
+        {
+          "text": "Muito obrigado pela ajuda!"
+        },
+        {
+          "text": "Obrigada mesmo!"
+        },
+        {
+          "text": "Obrigadão!"
+        },
+        {
+          "text": "Obrigado!"
+        },
+        {
+          "text": "Obrigado de coração!"
+        },
+        {
+          "text": "Te agradeço muito!"
+        },
+        {
+          "text": "Valeu!"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "pedirGuincho",
+      "examples": [
+        {
+          "text": "Como faço para solicitar um guincho?"
+        },
+        {
+          "text": "Estou com problemas no meu carro, necessito de um guincho"
+        },
+        {
+          "text": "Gostaria de acionar um guincho"
+        },
+        {
+          "text": "Meu carro está parado, será que podem mandar um guincho?"
+        },
+        {
+          "text": "Me vê um guincho por favor"
+        },
+        {
+          "text": "Pode mandar um guincho para mim?"
+        },
+        {
+          "text": "Posso chamar um guincho?"
+        },
+        {
+          "text": "Preciso de assistência de reboque para o meu veículo"
+        },
+        {
+          "text": "preciso de um guincho"
+        },
+        {
+          "text": "Preciso de um guincho, por favor"
+        },
+        {
+          "text": "Quero acionar o guincho"
+        },
+        {
+          "text": "Quero pedir um guincho para meu veículo"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "saudacao",
+      "examples": [
+        {
+          "text": "Boa noite"
+        },
+        {
+          "text": "Boa tarde"
+        },
+        {
+          "text": "Bom dia"
+        },
+        {
+          "text": "Como está?"
+        },
+        {
+          "text": "Como vai?"
+        },
+        {
+          "text": "E aí"
+        },
+        {
+          "text": "E aí meu chapa?"
+        },
+        {
+          "text": "Oi"
+        },
+        {
+          "text": "Olá"
+        },
+        {
+          "text": "tudo beleza?"
+        },
+        {
+          "text": "Tudo bem?"
+        },
+        {
+          "text": "Tudo tranquilo?"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "acidente",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "acidente",
+          "patterns": [
+            ".*"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "categoriaTarifaria",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "categoria",
+          "patterns": [
+            "\\b(?:10|1[48]|20|30|40|42|50|52|58|60|62|68|70|72|80|82|84|88|89|90|92|11|1[59]|21|23|31|41|43|51|53|59|61|63|69|71|73|81|83|85|88|89|91|93|94|95|96|97|98|99)\\b"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "dados",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "email",
+          "patterns": [
+            "[^@ \\t\\r\\n]+@[^@ \\t\\r\\n]+\\.[^@ \\t\\r\\n]+"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "nomeCompleto",
+          "patterns": [
+            "^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "telefone",
+          "patterns": [
+            "^\\(?[1-9]{2}\\)? ?(?:[2-8]|9[1-9])[0-9]{3}\\-?[0-9]{4}$"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "local",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "local",
+          "patterns": [
+            ".*"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "start",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "/start",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "webhooks": [
+    {
+      "url": "https://github.com/Asteriuz",
+      "name": "main_webhook",
+      "headers": []
+    }
+  ],
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá! Sou o GuincheiBot, um ChatBot especializado em auxiliar você no cadastro e em chamar um guincho em caso de acidente. Estou aqui para tornar esse processo mais fácil e eficiente para você. Como posso ajudar?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome || @start",
+      "dialog_node": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi. Você pode tentar reformular a frase."
+              },
+              {
+                "text": "Você pode reformular sua afirmação? Eu não estou entendendo."
+              },
+              {
+                "text": "Eu não entendi o sentido."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_6_1684132752302",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Tudo certo, qual seria o seu melhor número de celular de contato?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1683595710326",
+      "context": {
+        "email": "@dados.literal"
+      },
+      "conditions": "@dados:email",
+      "dialog_node": "node_10_1683595829520"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Assistência pelo WhatsApp\n\n55 11 3003 9303\nPara pedir assistência, adicione o WhatsApp da Porto aos seus contatos e siga as orientações da nossa assistente virtual.\n\nCentral de serviços\nGrande São Paulo: 333 76786\nCapitais e regiões metropolitanas: 4004 76786\nDemais localidades: 0300 337 6786\nAviso de sinistro, solicitação de serviços para automóvel, residência e outros. Atendimento 24h.\n\nSAC\n0800 727 2766\nAtendimento 24h.\n\n0800 727 8736\nAtendimento exclusivo para pessoas com deficiência auditiva. De segunda a sexta-feira, das 6h às 22h."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#contato",
+      "dialog_node": "node_10_1684697855133",
+      "previous_sibling": "node_3_1684704157570"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Qual é a sua localização atual?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1684704157570",
+      "context": {
+        "acidente": "@acidente.literal"
+      },
+      "conditions": "@acidente",
+      "dialog_node": "node_1_1684704199009"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Obs: Lembre-se de adicionar o DDD\nExemplo: 11 912345678\nDigite um telefone válido:"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1683595829520",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_4_1683595960450"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_2_1683914266539",
+      "previous_sibling": "node_4_1683595960450"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Em qual categoria tarifaria o seu veículo se encontra?\n(Caso não saiba, por favor olha na página 12 desse pdf https://www.portoseguro.com.br/Aplica%C3%A7%C3%B5es%20Compartilhadas/Not%C3%ADcias/anexos/link_comunicado_diferenciais_peq_e_med_empresas.pdf)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1684704199009",
+      "context": {
+        "local": "@local.literal"
+      },
+      "conditions": "@local",
+      "dialog_node": "node_2_1684704264296"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Tudo pronto, guincho a caminho!\nInformações\nAcidente: $acidente\nLocalização: $local\nCategoria Tarifária: $categoria"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1684704264296",
+      "context": {
+        "categoria": "@categoriaTarifaria.literal"
+      },
+      "conditions": "@categoriaTarifaria",
+      "dialog_node": "node_2_1684704383181"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Digite um e-mail válido:"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1683595710326",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_10_1683595829520"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_3_1683913915405",
+      "previous_sibling": "node_10_1683595829520"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá! Como posso ajudá-lo(a) hoje?"
+              },
+              {
+                "text": "Hey! O que posso fazer por você hoje?"
+              },
+              {
+                "text": "Olá! Estou à disposição para ajudá-lo(a) em qualquer coisa que precisar."
+              },
+              {
+                "text": "Olá! Estou aqui para ajudá-lo(a) a resolver qualquer problema que tiver."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#saudacao",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_3_1684121685870",
+      "previous_sibling": "node_6_1684698200956"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Descreva o acidente, por favor:"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {},
+      "conditions": "#pedirGuincho",
+      "dialog_node": "node_3_1684704157570",
+      "previous_sibling": "node_5_1683595479644"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Certo, qual o seu e-mail?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1683595479644",
+      "context": {
+        "nome": "@dados.literal"
+      },
+      "conditions": "@dados:nomeCompleto",
+      "dialog_node": "node_4_1683595710326"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Tudo pronto, cadastro concluído!\nNome: $nome\nEmail: $email\nTelefone: $telefone"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1683595829520",
+      "context": {
+        "telefone": "@dados.literal"
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "@dados:telefone",
+      "dialog_node": "node_4_1683595960450"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Perfeito, vamos começar, qual o seu nome?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#inicioCadastro",
+      "dialog_node": "node_5_1683595479644",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Tchau! Estarei aqui quando você retornar. Até mais e até breve!"
+              },
+              {
+                "text": "Adeus! Agradeço pela conversa e estou à disposição para ajudar novamente quando necessário. Tenha um ótimo dia!"
+              },
+              {
+                "text": "Até breve! Estarei aqui para responder a suas dúvidas quando você retornar. Até mais e até logo!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#despedida",
+      "dialog_node": "node_6_1684132752302",
+      "previous_sibling": "node_8_1683913078288"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O tempo de demora do guincho pode variar dependendo da localização e da demanda atual. Recomendo entrar em contato diretamente com o serviço de guincho para obter informações atualizadas sobre o tempo estimado de chegada. Eles poderão fornecer uma resposta mais precisa e orientá-lo da melhor forma possível."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#duvidaDemora",
+      "dialog_node": "node_6_1684698200956",
+      "previous_sibling": "node_7_1684115035317"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Digite um número de categoria válido por favor, e apenas o número:"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1684704264296",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_2_1684704383181"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_6_1684705206786",
+      "previous_sibling": "node_2_1684704383181"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Digite um nome válido (sem caracteres especiais):"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1683595479644",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_4_1683595710326"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_7_1684112949969",
+      "previous_sibling": "node_4_1683595710326"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para iniciar o processo de cadastro, basta digitar \"cadastro\" aqui mesmo no chatbot. Estou pronto para auxiliá-lo durante todo o processo. Vamos começar?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#duvidaCadastro",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_7_1684115035317",
+      "previous_sibling": "node_10_1684697855133"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Estou sempre aqui para ajudar!"
+              },
+              {
+                "text": "Fico feliz em ter ajudado!"
+              },
+              {
+                "text": "Estou à disposição para ajudar sempre que precisar."
+              },
+              {
+                "text": "Não há de quê, estou aqui para isso!"
+              },
+              {
+                "text": "Eu que agradeço a oportunidade de ajudar."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#obrigado",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_8_1683913078288",
+      "previous_sibling": "node_3_1684121685870"
+    },
+    {
+      "type": "response_condition",
+      "output": {},
+      "parent": "node_4_1683595960450",
+      "disabled": true,
+      "conditions": "$webhook_result_1",
+      "dialog_node": "response_7_1684113412698",
+      "previous_sibling": "response_9_1684113411274"
+    },
+    {
+      "type": "response_condition",
+      "output": {},
+      "parent": "node_4_1683595960450",
+      "disabled": true,
+      "conditions": "anything_else",
+      "dialog_node": "response_7_1684113413119",
+      "previous_sibling": "response_7_1684113412698"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Tudo pronto, cadastro concluído!\nNome: $nome\nEmail: $email\nTelefone: $telefone"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1683595960450",
+      "context": {
+        "telefone": "@dados.literal"
+      },
+      "disabled": true,
+      "dialog_node": "response_9_1684113411274"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "nlp": {
+      "model": "latest"
+    },
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores",
+      "use_connect_to_support_prompt": "Connect to support",
+      "single_answer_clarification_prompt": "Something else"
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    }
+  },
+  "learning_opt_out": false,
+  "language": "pt-br",
+  "description": "Bot para pedir guincho e duvidas e cadastro",
+  "name": "Guinchei-dialog"
+}
