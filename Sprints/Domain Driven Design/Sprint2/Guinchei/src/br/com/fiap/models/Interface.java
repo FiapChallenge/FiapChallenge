@@ -263,6 +263,7 @@ public class Interface {
             String dataFormatada = formatador.format(data);
 
             sb.getCasos().add(new Caso(acidenteText.getText().trim(), localText.getText(), dataFormatada, tipoVeiculo, "pendente", usuario));
+            sb.saveData();
             return;
         }
         if (opcao == 1) {

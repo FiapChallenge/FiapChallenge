@@ -8,14 +8,6 @@ public class App {
         Usuario usuarioLogado = null;
 
         sb.loadData();
-        for (Caso caso : sb.getCasos()) {
-            System.out.println(caso.getAcidente());
-            System.out.println(caso.getLocal());
-            System.out.println(caso.getDataHora());
-            System.out.println(caso.getTipo());
-            System.out.println(caso.getStatus());
-            System.out.println(caso.getUsuario().getEmail());
-        }
 
         if (debugApp) {
             usuarioLogado = sb.buscarUsuario("augustobb@live.com");

@@ -13,4 +13,4 @@ Gabriel Souza de Queiroz -98570
 Gabriela Zanotto Alves Rodrigues-551629
 
 🖥️| Repositório GitHub:
-https://github.com/FiapChallenge/JAVAcp2
+https://github.com/Asteriuz/FiapChallenge/
