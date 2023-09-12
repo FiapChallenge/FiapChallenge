@@ -20,8 +20,9 @@ def load_data():
         with open("data/modelos.json", "r", encoding="utf8") as f:
             modelos_data = json.load(f)
         return modelos_data
-    
+
     marcas_data = {}
+    # https://www.luiztools.com.br/post/base-de-dados-com-todas-as-marcas-e-modelos-de-veiculos/ - Marcas e modelos de veículos
     with open(
         "Database/marcas-carros.csv", "r", newline="", encoding="utf-8-sig"
     ) as marca_file:
@@ -86,13 +87,14 @@ def load_data():
                     "TIPO": "Moto",
                 }
             )
-            
+
     modelos_data.sort(key=lambda x: x["ID"])
-            
+
     for i, modelo in enumerate(modelos_data):
         modelo["ID"] = i
 
     return modelos_data
+
 
 def print_menu():
     menu = """
@@ -108,13 +110,14 @@ def print_menu():
 """
     print(menu)
 
+
 if __name__ == "__main__":
     modelos_data = load_data()
     while True:
         print_menu()
         option = int(input("Digite a opção desejada: "))
         if comandos.config["clear_output"]:
-                os.system("cls" if os.name == "nt" else "clear")
+            os.system("cls" if os.name == "nt" else "clear")
         match option:
             case 0:
                 break

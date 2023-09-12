@@ -14584,5 +14584,29 @@
         "MARCA": "TESLA",
         "NOME": "Model X",
         "TIPO": "Carro"
+    },
+    {
+        "ID": 2431,
+        "MARCA": "TESLA",
+        "NOME": "Model 3",
+        "TIPO": "Carro"
+    },
+    {
+        "ID": 2432,
+        "MARCA": "TESLA",
+        "NOME": "Roadster",
+        "TIPO": "Carro"
+    },
+    {
+        "ID": 2433,
+        "MARCA": "TESLA",
+        "NOME": "Cybertruck",
+        "TIPO": "Carro"
+    },
+    {
+        "ID": 2434,
+        "MARCA": "TESLA",
+        "NOME": "Model S",
+        "TIPO": "Carro"
     }
 ]
