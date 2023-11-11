@@ -1,35 +1,35 @@
 import React from "react";
 import GithubLogo from "@/assets/icons/github.png";
 import YoutubeLogo from "@/assets/icons/youtube.png";
-import GuincheiLogo from "@/assets/GuincheiLogoRemake.png";
+import GuincheiLogo from "@/assets/GuincheiLogo.svg";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function () {
+export default function Footer() {
   return (
     <footer className="text-base lg:pt-8 bg-cinza-claro">
-      <div className="p-4 mx-auto w-full max-w-screen-xl bg-cinza-claro">
+      <div className="w-full max-w-screen-xl p-4 mx-auto bg-cinza-claro">
         <div className="md:flex md:justify-between">
-          <div className="obs-hidden m-4 ml-0 mt-0 mb-8 md:mb-0 mr-10 lg:mr-20 pb-4">
+          <div className="pb-4 pt-4 md:pt-0 m-4 mt-0 mb-8 ml-0 mr-10 obs-hidden md:mb-0 lg:mr-20">
             <a href="#start" className="flex justify-center">
               <Image
                 width={184}
                 src={GuincheiLogo}
-                className="grayscale duration-300 ease-in-out hover:grayscale-0"
+                className="duration-300 ease-in-out grayscale hover:grayscale-0"
                 alt="Logo do Guinchei"
               />
             </a>
           </div>
           <div className="grid grid-cols-1 gap-8 text-center sm:grid-cols-2 sm:gap-6 md:w-10/12 md:grid-cols-3 md:gap-10 md:text-left lg:grid-cols-[1.5fr,2fr,1fr]">
             <div className="obs-hidden" style={{ ["--delay" as any]: 3 }}>
-              <h2 className="mb-6 text-sm font-semibold uppercase text-white">
+              <h2 className="mb-6 text-sm font-semibold text-white uppercase">
                 Contato
               </h2>
-              <ul className="font-medium text-cinza">
-                <li className="mb-4 flex justify-center transition-colors md:justify-start">
+              <ul className="font-medium text-cinza-footer">
+                <li className="flex justify-center mb-4 transition-colors md:justify-start">
                   <a
                     href="mailto:incguinchei@gmail.com"
-                    className="group flex justify-center gap-1 break-all hover:underline group-hover:text-orange-500 md:justify-start"
+                    className="flex justify-center gap-1 break-all group hover:underline group-hover:text-orange-500 md:justify-start"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -63,8 +63,8 @@ export default function () {
                     </span>
                   </a>
                 </li>
-                <li className="mb-4 flex justify-center transition-colors md:justify-start">
-                  <a href="tel:+551120936530" className="group flex gap-1">
+                <li className="flex justify-center mb-4 transition-colors md:justify-start">
+                  <a href="tel:+551120936530" className="flex gap-1 group">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="w-6 shrink-0 fill-none"
@@ -85,9 +85,9 @@ export default function () {
                 </li>
                 <li className="flex justify-center transition-colors md:justify-start">
                   <a
-                    className="group flex gap-1"
+                    className="flex gap-1 group"
                     target="_blank"
-                    href="https://wa.me/5511941539651?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+a+Cl%C3%ADnica+Plena"
+                    href="https://wa.me/5511997434003?text=Olá!%20Gostaria%20de%20solicitar%20um%20guincho."
                   >
                     <svg
                       className="w-6 shrink-0 group-hover:fill-green-500"
@@ -110,10 +110,10 @@ export default function () {
             </div>
 
             <div className="obs-hidden" style={{ ["--delay" as any]: 6 }}>
-              <h2 className="mb-6 text-sm font-semibold uppercase text-white">
+              <h2 className="mb-6 text-sm font-semibold text-white uppercase">
                 Integrantes - RM
               </h2>
-              <ul className="font-medium text-cinza">
+              <ul className="font-medium text-cinza-footer">
                 <li className="mb-4">
                   <a
                     target="_blank"
@@ -153,10 +153,10 @@ export default function () {
               </ul>
             </div>
             <div className="obs-hidden" style={{ ["--delay" as any]: 9 }}>
-              <h2 className="mb-6 text-sm font-semibold uppercase text-white">
+              <h2 className="mb-6 text-sm font-semibold text-white uppercase">
                 Navegação
               </h2>
-              <ul className="flex flex-col gap-y-4 font-medium text-cinza">
+              <ul className="flex flex-col font-medium gap-y-4 text-cinza-footer">
                 <li>
                   <Link
                     className="duration-300 ease-in-out hover:text-white hover:underline"
@@ -186,11 +186,11 @@ export default function () {
           </div>
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
-        <div className="flex-wrap gap-x-6 text-center flex items-center justify-center">
-          <div className="mt-4 flex justify-center items-center space-x-5 sm:mt-0">
+        <div className="flex flex-wrap items-center justify-center text-center gap-x-6">
+          <div className="flex items-center justify-center mt-4 space-x-5 sm:mt-0">
             <a target="_blank" href="https://github.com/Asteriuz/FiapChallenge">
               <Image
-                className="grayscale hover:grayscale-0 transition-all duration-300 ease-in-out"
+                className="transition-all duration-300 ease-in-out grayscale hover:grayscale-0"
                 src={GithubLogo}
                 width={48}
                 alt="logo do github"
@@ -201,7 +201,7 @@ export default function () {
               href="https://www.youtube.com/channel/UCTAMms64mj1OIKF6FRvfEsA"
             >
               <Image
-                className="grayscale hover:grayscale-0 transition-all duration-300 ease-in-out"
+                className="transition-all duration-300 ease-in-out grayscale hover:grayscale-0"
                 width={48}
                 src={YoutubeLogo}
                 alt="logo do youtube"
@@ -210,7 +210,7 @@ export default function () {
           </div>
         </div>
       </div>
-      <div className="bg-cinza-escuro mt-2 text-white flex justify-center text-base py-3">
+      <div className="flex justify-center py-3 mt-2 text-base text-white bg-cinza-escuro">
         <a
           id="copyright"
           target="_blank"
