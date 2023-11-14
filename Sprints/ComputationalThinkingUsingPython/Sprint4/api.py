@@ -6,7 +6,7 @@ from flask_talisman import Talisman
 from cx_Oracle import makedsn
 from sqlalchemy.orm import validates
 
-SELF_SIGN_CERT = True
+SELF_SIGN_CERT = False
 
 app = Flask(__name__)
 api = Api(app)
